@@ -1,5 +1,5 @@
 export const site = {
-  url: 'https://maksymnykonchuk.github.io/',
+  url: 'https://maksimnykonchuk.github.io/',
   portrait: null,
   socialImage: {
     uk: { src: '/images/preview-uk.png', alt: 'Максим Никончук, Full-Stack веброзробник' },
