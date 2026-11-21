@@ -20,7 +20,7 @@ npm run preview
 
 ## Публікація на GitHub Pages
 
-У репозиторії `maksimnykonchuk/maksimnykonchuk.github.io` відкрийте **Settings → Pages → Build and deployment → Source** й виберіть **GitHub Actions**. Workflow `Deploy to GitHub Pages` збирає сайт і публікує `dist/` після оновлення гілки `main`. Для першого запуску після налаштування Pages можна вибрати **Actions → Deploy to GitHub Pages → Run workflow** і вказати `main`.
+У репозиторії `maksymnykonchuk/maksymnykonchuk.github.io` відкрийте **Settings → Pages → Build and deployment → Source** й виберіть **GitHub Actions**. Workflow `Deploy to GitHub Pages` збирає сайт і публікує `dist/` після оновлення гілки `main`. Для першого запуску після налаштування Pages можна вибрати **Actions → Deploy to GitHub Pages → Run workflow** і вказати `main`.
 
 ## Оновлення вмісту
 
