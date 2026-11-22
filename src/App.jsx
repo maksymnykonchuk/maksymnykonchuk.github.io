@@ -224,16 +224,27 @@ function Contact({ text, links }) {
         </div>
         {hasLinks ? (
           <dl>
-            {links.map(({ id, label, value, href, newTab }) => (
-              <div className="contact-row grid items-baseline" key={id}>
-                <dt>{label}</dt>
-                <dd>
-                  <a href={href} target={newTab ? '_blank' : undefined} rel={newTab ? 'noopener noreferrer' : undefined}>
-                    {value}
-                  </a>
-                </dd>
-              </div>
-            ))}
+            {links.map(({ id, label, value, href, newTab }) => {
+              const emailSeparator = href.startsWith('mailto:') ? value.lastIndexOf('@') : -1
+
+              return (
+                <div className="contact-row grid items-baseline" key={id}>
+                  <dt>{label}</dt>
+                  <dd>
+                    <a
+                      href={href}
+                      target={newTab ? '_blank' : undefined}
+                      rel={newTab ? 'noopener noreferrer' : undefined}
+                      aria-label={emailSeparator > 0 ? value : undefined}
+                    >
+                      {emailSeparator > 0
+                        ? <>{value.slice(0, emailSeparator)}<wbr />{value.slice(emailSeparator)}</>
+                        : value}
+                    </a>
+                  </dd>
+                </div>
+              )
+            })}
           </dl>
         ) : (
           <p className="contact-intro">{text.contactText}</p>

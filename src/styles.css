@@ -568,6 +568,12 @@ html:has(.project-viewer[open]) {
   color: var(--ink);
 }
 
+@media (width > 47rem) {
+  .contact-panel:has(> dl) {
+    grid-template-columns: minmax(0, 1.2fr) minmax(max-content, 1fr);
+  }
+}
+
 .contact-panel .section-heading {
   text-wrap: initial;
 }

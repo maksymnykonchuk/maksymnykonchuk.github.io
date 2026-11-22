@@ -4,7 +4,7 @@ export const contacts = [
   {
     id: 'github',
     label: 'GitHub',
-    value: '@maksymnykonchuk',
+    value: 'maksymnykonchuk',
     href: 'https://github.com/maksymnykonchuk',
     newTab: true,
   },
