@@ -94,9 +94,9 @@ export const projects = [
     technologies: ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap'],
     screenshots: [
       {
-        src: '/images/m-cargoo-home.jpg',
-        width: 483,
-        height: 1280,
+        src: '/images/m-cargoo-home.png',
+        width: 4740,
+        height: 8878,
         preview: 'wide-top',
         alt: {
           uk: 'Головна сторінка сайту M_Cargoo',
