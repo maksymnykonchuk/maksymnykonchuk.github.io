@@ -224,10 +224,14 @@ function Contact({ text, links }) {
         </div>
         {hasLinks ? (
           <dl>
-            {links.map(({ id, label, value, href }) => (
+            {links.map(({ id, label, value, href, newTab }) => (
               <div className="contact-row grid items-baseline" key={id}>
                 <dt>{label}</dt>
-                <dd><a href={href}>{value}</a></dd>
+                <dd>
+                  <a href={href} target={newTab ? '_blank' : undefined} rel={newTab ? 'noopener noreferrer' : undefined}>
+                    {value}
+                  </a>
+                </dd>
               </div>
             ))}
           </dl>
